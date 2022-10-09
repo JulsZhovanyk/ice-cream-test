@@ -98,6 +98,9 @@ body {
   margin: 0 auto;
   min-width: 280px;
 }
+.section-contacts__element:not(:last-child) {
+  margin-bottom: 20px;
+}
 .section-contacts__name {
   font-weight: 500;
   font-size: 12px;
