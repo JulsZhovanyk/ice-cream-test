@@ -89,9 +89,6 @@ body {
   @media screen and (min-width: 768px) {
     display: flex;
   }
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
 }
 .section-contacts__element {
   background: var(--white-color);
@@ -102,14 +99,20 @@ body {
 
   @media screen and (max-width: 767px) {
     min-width: 280px;
+    padding: 40px 24px;
   }
   @media screen and (min-width: 768px) {
     width: 224px;
+    border-radius: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
   }
 }
 .section-contacts__element:not(:last-child) {
-  margin-bottom: 20px;
-
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 16px;
   }
@@ -128,15 +131,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 .section-contacts__name_bigger {
   width: 130px;
+
+  @media screen and (min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
 }
 .section-contacts__city {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
   color: var(--black-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .section-contacts__address {
   font-weight: 500;
@@ -145,6 +168,13 @@ body {
   color: var(--brown-color);
   width: 212px;
   cursor: url(../src/images/sprite.svg#icon-pointer);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 
   transition: text-decoration var(--animation);
 }
@@ -158,8 +188,12 @@ body {
   border: 1px solid #e1e1e1;
   margin-top: 24px;
   margin-bottom: 24px;
-
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+    margin-bottom: 32px;
+  }
 }
 .section-contacts__schedule-list {
 }
@@ -178,12 +212,26 @@ body {
   font-size: 12px;
   line-height: 1.86;
   color: var(--black-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .section-contacts__time {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
   color: #ababab;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .section-contacts__contacts-list {
 }
@@ -194,6 +242,13 @@ body {
   font-size: 12px;
   line-height: 1.5;
   color: var(--black-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .section-contacts__btn-wrapper {
   display: flex;
@@ -206,6 +261,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 64px;
+    margin-bottom: 120px;
+  }
 }
 .section-contacts__buttons-element {
 }
