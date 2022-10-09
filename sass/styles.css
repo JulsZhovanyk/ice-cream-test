@@ -93,6 +93,11 @@ body {
   flex-direction: column;
   gap: 20px; */
 }
+@media screen and (min-width: 768px) {
+  .section-contacts__list {
+    display: flex;
+  }
+}
 
 .section-contacts__element {
   background: var(--white-color);
@@ -100,11 +105,25 @@ body {
   border-radius: 40px;
   padding: 40px 32px;
   margin: 0 auto;
-  min-width: 280px;
+}
+@media screen and (max-width: 767px) {
+  .section-contacts__element {
+    min-width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-contacts__element {
+    width: 224px;
+  }
 }
 
 .section-contacts__element:not(:last-child) {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .section-contacts__element:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 
 .section-contacts__name {
@@ -139,6 +158,7 @@ body {
   line-height: 1.83;
   color: var(--brown-color);
   width: 212px;
+  cursor: url(../src/images/sprite.svg#icon-pointer);
   transition: -webkit-text-decoration var(--animation);
   transition: text-decoration var(--animation);
   transition: text-decoration var(--animation), -webkit-text-decoration var(--animation);
